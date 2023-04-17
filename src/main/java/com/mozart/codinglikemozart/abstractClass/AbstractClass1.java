@@ -5,7 +5,8 @@ import com.mozart.codinglikemozart.dependance.ConcreteDependance2;
 import org.springframework.stereotype.Component;
 
 @Component
-public class AbstractClass1 {
-    public ConcreteDependance1 concreteDependance1;
-    public ConcreteDependance2 concreteDependance2;
+@AllArgsConstructor
+public abstract class AbstractClass1 {
+    private ConcreteDependance1 concreteDependance1;
+    private ConcreteDependance2 concreteDependance2;
 }
